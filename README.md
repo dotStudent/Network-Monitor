@@ -6,4 +6,5 @@ Features:
  * Network Segement directly by selected Network Card
  * Notify about Changes in the Network (New Hosts online or already found Hosts now offline)
 
-![alt text](https://cloud.githubusercontent.com/assets/26997146/25738169/ef42286a-317b-11e7-970f-0638ebeca5f8.png)
+![alt text](https://cloud.githubusercontent.com/assets/26997146/25738423/62dd2710-317d-11e7-9715-8f95ca806d46.png)
+
