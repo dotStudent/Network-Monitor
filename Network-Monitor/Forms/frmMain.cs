@@ -24,12 +24,13 @@ namespace Network_Monitor.Forms
         string firstIP = "";
         string lastIP = "";
         string nwpartial = "";
-        int port = 0;
+        int port;
 
         int addresses;
         int online;
         int portOpen;
 
+        #region Constructor
         public frmMain()
         {
             InitializeComponent();
@@ -43,8 +44,7 @@ namespace Network_Monitor.Forms
             timer1.Interval = 500; //Intervall CheckHosts is called
             timer1.Tick += new EventHandler(timer1_Tick);
         }
-
-
+        #endregion
 
         #region Events
         private void btStart_Click(object sender, EventArgs e)
@@ -503,11 +503,11 @@ namespace Network_Monitor.Forms
                                  //New Host
                                     if (port != 0)
                                     {
-                                        messageBox.Push("NEW:                      " + x.IP_Address + ", " + x.Hostname + " First Seen: " + x.First_Seen + " Port " + port + ": " + x.PortOpen);
+                                        messageBox.Push("NEW:                   " + x.IP_Address + ", " + x.Hostname + " First Seen: " + x.First_Seen + " Port " + port + ": " + x.PortOpen);
                                     }
                                     else
                                     {
-                                        messageBox.Push("NEW:                      " + x.IP_Address + ", " + x.Hostname + " First Seen: " + x.First_Seen);
+                                        messageBox.Push("NEW:                   " + x.IP_Address + ", " + x.Hostname + " First Seen: " + x.First_Seen);
                                     }
                                 }
                                 else if (x.Active == true && online == false)
